@@ -59,5 +59,8 @@ if(BUILD_RUNTIME)
         add_test(NAME runtime_smoke COMMAND ${Python3_EXECUTABLE}
             ${CMAKE_SOURCE_DIR}/tests/smoke.py $<TARGET_FILE:telemetry_monitor>)
         set_tests_properties(runtime_smoke PROPERTIES TIMEOUT 15)
+        add_test(NAME integration COMMAND ${Python3_EXECUTABLE}
+            ${CMAKE_SOURCE_DIR}/tests/integration.py $<TARGET_FILE:telemetry_monitor>)
+        set_tests_properties(integration PROPERTIES TIMEOUT 90)
     endif()
 endif()

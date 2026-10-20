@@ -1,0 +1,5 @@
+at_ms,temperature_q4,status
+0,400,ok
+500,480,ok
+1000,-160,ok
+1500,400,ok

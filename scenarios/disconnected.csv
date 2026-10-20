@@ -1,0 +1,5 @@
+at_ms,temperature_q4,status
+0,400,ok
+500,0,nack
+1000,0,timeout
+1500,400,ok
